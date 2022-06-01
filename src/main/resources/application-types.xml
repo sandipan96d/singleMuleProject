@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="original_payload" format="xml">
+      <types:example format="xml" element="ProcessData" location="examples/payload_xml1"/>
+    </types:type>
+    <types:type name="payload2" format="xml">
+      <types:example format="xml" element="{http://www.starstandards.org/STAR}AcknowledgeServiceAppointment" location="examples/eclaims-payload-xml2-1.xml"/>
+    </types:type>
+    <types:type name="payload" format="xml">
+      <types:example format="xml" element="{http://schemas.xmlsoap.org/soap/envelope/}Envelope" location="examples/eclaims-payload-xml1-original.xml"/>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#f33abfb5-1e1d-49bd-bda1-3279c44890e2">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="original_payload"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="original_payload"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#0b946ddb-ddcb-47a1-8b79-6686d837e686">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="payload"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="payload"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

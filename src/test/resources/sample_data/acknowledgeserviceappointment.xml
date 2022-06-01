@@ -1,0 +1,86 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ProcessMessageResponse>
+            <payload>
+                <content id="">
+                    <AcknowledgeServiceAppointment release="8.1-Lite">
+                        <ApplicationArea>
+                            <Sender>
+                                <Component>Sender_Component</Component>
+                                <Task>PolicyVerification</Task>
+                                <CreatorNameCode>JMA</CreatorNameCode>
+                                <SenderNameCode>JMA</SenderNameCode>
+                            </Sender>
+                            <CreationDateTime>2022-04-26T09:43:44</CreationDateTime>
+                            <BODId>1023</BODId>
+                            <Destination>
+                                <DestinationNameCode>KMX</DestinationNameCode>
+                                <StoreNumber>7274</StoreNumber>
+                                <LocationId>CARMAX - WEST VALLEY</LocationId>
+                            </Destination>
+                        </ApplicationArea>
+                        <DataArea>
+                            <Acknowledge/>
+                            <ServiceAppointment>
+                                <Header>
+                                    <DocumentId>727400000368380</DocumentId>
+                                    <Provider>
+                                        <PartyId>JMA</PartyId>
+                                    </Provider>
+                                    <IndividualOwner>
+                                        <PersonName>
+                                            <GivenName>SHELBY</GivenName>
+                                            <MiddleName/>
+                                            <FamilyName>HOSKIN</FamilyName>
+                                        </PersonName>
+                                        <Address>
+                                            <AddressLine>15645 N 35TH AVE</AddressLine>
+                                            <City>PHOENIX</City>
+                                            <StateOrProvince>AZ</StateOrProvince>
+                                            <Country>US</Country>
+                                            <PostalCode>850530000</PostalCode>
+                                        </Address>
+                                        <Contact>
+                                            <Telephone desc="Day Phone">6232499418</Telephone>
+                                        </Contact>
+                                    </IndividualOwner>
+                                    <Vehicle>
+                                        <Model>MALIBU</Model>
+                                        <ModelYear>2008</ModelYear>
+                                        <Make>CHEVROLET</Make>
+                                        <VIN>1G1ZJ57B08F175777</VIN>
+                                    </Vehicle>
+                                    <Warranty>
+                                        <WarrantyTypeDescription>Base</WarrantyTypeDescription>
+                                    </Warranty>
+                                    <ServiceContract>
+                                        <ContractCompanyName>Name of ESP Company</ContractCompanyName>
+                                        <ContractId>P00001729223</ContractId>
+                                        <ContractPlanCode/>
+                                        <ContractType>WAR</ContractType>
+                                        <ContractPlanDescription>MAXCARE</ContractPlanDescription>
+                                        <Term length="Months">36</Term>
+                                        <ContractStartDate>2016-04-27</ContractStartDate>
+                                        <ContractDeductible currency="USD">250</ContractDeductible>
+                                        <ContractExpirationDate>2019-04-26</ContractExpirationDate>
+                                        <ContractStartMileage uom="M">104869</ContractStartMileage>
+                                        <ContractTermMileage uom="M">150000</ContractTermMileage>
+                                        <ContractNote>Contract has expired based on date</ContractNote>
+                                        <ContractEffectiveDate>2016-04-26</ContractEffectiveDate>
+                                        <ContractPlanStates>EXPIRED</ContractPlanStates>
+                                        <RoadsideAssistanceInd>N</RoadsideAssistanceInd>
+                                        <RentalAllowance currency="USD">40</RentalAllowance>
+                                        <TowingAllowance currency="USD">100</TowingAllowance>
+                                        <RentDaysQuantity>7</RentDaysQuantity>
+                                    </ServiceContract>
+                                    <MileageIn>0</MileageIn>
+                                </Header>
+                                <Detail/>
+                            </ServiceAppointment>
+                        </DataArea>
+                    </AcknowledgeServiceAppointment>
+                </content>
+            </payload>
+        </ProcessMessageResponse>
+    </s:Body>
+</s:Envelope>
